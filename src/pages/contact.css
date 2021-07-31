@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact_header {
+  background-image: url("../video/blog_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 980px;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  z-index: -1;
+}
+
+.contact_section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px auto 100px;
+}
+
+.contact_form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  grid-column-start: 2;
+  grid-column-end: span 4;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  margin: 60px 0;
+}
+
+.contact_form h1 {
+  text-align: center;
+}
+
+.field {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease 0s;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.field input {
+  height: 40px;
+}
+
+.field label {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom: 1px solid #f06666;
+}
+
+.submit {
+  text-align: center;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.btn_med {
+  color: #fff;
+  background-color: #008cba;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.contact_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact_form {
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 2;
+  }
+}
