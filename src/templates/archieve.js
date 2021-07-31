@@ -8,7 +8,11 @@ import blog_background from '../video/blog_background.jpg'
 const archieve = (props) => {
 
     const blogContent = props.data.allContentfulBlog
-   
+  // const { currentPage, numPages} = props.pageContext
+    // const isFirst = currentPage === 1
+    // const isLast = currentPage === numPages
+    // const prevPage = currentPage - 1 === 1 ? '/blog' : `/blog/${currentPage - 1}`
+    // const nextPage = `/blog/${currentPage + 1}`
      
     return (
        <div >
@@ -31,7 +35,22 @@ const archieve = (props) => {
                     </div>
                 ))}
            </div>
-
+            {/* <div className='pagination'>
+               <div className='pagination_item'>
+                   {isFirst && (
+                       <Link to = {prevPage} rel='prev'>
+                           <div className='arrow_back'></div>
+                       </Link>
+                   )}
+               </div>
+               <div className='pagination_item'>
+                   {isLast && (
+                       <Link to = {nextPage} rel='next'>
+                           <div className='arrow_next'></div>
+                       </Link>
+                   )}
+               </div>
+           </div> */}
            
        </div>
        
